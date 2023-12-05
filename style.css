@@ -1,0 +1,181 @@
+
+@import url("card.css");
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    color: rgb(25, 25, 25);
+}
+
+body {
+    position: static;
+    background-color: #bdfdff;
+    background-image: url(pics/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+
+    > ul {
+        list-style-type: none;
+        display: flex;
+        gap: 8%;
+        justify-content: center;
+
+        > li a {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        > li a:hover {
+            color: aqua;
+            letter-spacing: 2px;
+            transition: all 0.4s;
+        }
+    }
+
+}
+
+.contents {
+    width: auto;
+    height: 70vh;
+    margin: 50px;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+.jiji{
+    width: 200px; 
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+}
+
+.horz {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 50%;
+    height: 50%;
+}
+
+section {
+    width: 90%;
+    height: 80dvh;
+    margin-block: 5%;
+    padding: 5%;
+
+    background-color: rgba(255, 255, 255, 0.6);
+
+    border-radius: 10px;
+
+
+
+    > p {
+        color: white;
+        text-align: center;
+        
+    }
+
+    > hr {
+        margin-block: 5%;
+    }
+}
+
+#home {
+    background-image: url("pics/jiji.jpg");
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    > p {
+        text-shadow: 2px 1px black;
+        font-family: "Freshtea Healthy";
+        font-size: 3rem;
+    }
+}
+
+#background {
+
+    > .horz {
+        padding: 50px;
+        gap: 50px;
+
+    }
+    
+}
+
+#stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    > .horz {
+        flex-direction: row;
+        gap: 10%;
+
+        > .book:nth-child(1) > .display > .content {
+            height: 100%;
+            background-image: url('pics/hih.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        > .book:nth-child(2) > .display > .content {
+            height: 100%;
+            background-image: url('pics/lwl.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        > .book:nth-child(3) > .display > .content {
+            height: 100%;
+            background-image: url('pics/twt.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+}
+
+#about {
+    
+    > h1 {
+        text-align: center;
+    }
+
+    > .par {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+
+        > p {
+            text-align: center;
+        }
+    }
+
+}
